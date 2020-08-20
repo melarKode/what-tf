@@ -3,7 +3,7 @@ import {MnistData} from './data.js';
 
 async function showExamples(data){
     const surface=tfvis.visor().surface({name:'Input Data Examples',tab:'Input Data'});
-    const examples = data.nextTestBatch(20);
+    const examples = data.nextTestBatch(10);
     const numExamples = examples.xs.shape[0];
 
     for(let i=0; i<numExamples; i++){

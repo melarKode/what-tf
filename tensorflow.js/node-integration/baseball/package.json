@@ -1,0 +1,22 @@
+{
+  "name": "tfjs-example-baseball-node",
+  "version": "1.0.0",
+  "description": "Deep learning models for classifying baseball metrics",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Navneet Melarkode",
+  "license": "ISC",
+  "dependencies": {
+    "@tensorflow/tfjs-node": "^2.3.0",
+    "argparse": "^2.0.0",
+    "clang-format": "^1.4.0",
+    "mkdirp": "^1.0.4",
+    "nodemon": "^2.0.4",
+    "socket.io": "^2.3.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
