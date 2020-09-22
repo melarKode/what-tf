@@ -8,6 +8,10 @@ export function init(){
     statusElement.style.display = 'none';
 }
 
+export function predictClass(classId) {
+document.body.setAttribute('data-active', CONTROLS[classId]);
+}
+
 const trainStatusElement = document.getElementById('train-status');
 
 const learningRateElement = document.getElementById('learningRate');
@@ -20,7 +24,7 @@ const epochsElement = document.getElementById('epochs');
 export const getEpochs = () => +epochsElement.value;
 
 const denseUnitsElement = document.getElementById('dense-units');
-export const getDesnseUnits = () => +denseUnitsElement.value;
+export const getDenseUnits = () => +denseUnitsElement.value;
 const statusElement = document.getElementById('status');
 
 export function isPredicting(){
