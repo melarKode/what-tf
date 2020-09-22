@@ -1,5 +1,3 @@
-import * as tf from '@tensorflow/tfjs';
-
 export class ControllerDataset{
     constructor(numClasses){
         this.numClasses = numClasses;

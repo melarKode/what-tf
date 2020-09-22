@@ -1,9 +1,5 @@
-import * as tf from '@tensorflow/tfjs';
-import { relu } from '@tensorflow/tfjs';
-import * as tfd from '@tensorflow/tfjs-data';
-
-import {ControllerDataset} from './controller';
-import * as ui from './ui';
+import {ControllerDataset} from './controller.js';
+import * as ui from './ui.js';
 
 const NUM_CLASSES = 4;
 

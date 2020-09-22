@@ -1,6 +1,8 @@
 <html>
   <head>
     <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+    <script src="bundle.js"></script>
   </head>
   <body>
     <div id="status">Loading mobilenet...</div>
@@ -105,10 +107,6 @@
           </div>
         </div><!-- ./panel-cell -->
 
-        <div class="panel-cell panel-cell-center panel-cell-fill">
-          <img height="108" width="129" src="./images/joystick.png" />
-        </div><!-- ./panel-cell -->
-
         <div class="panel-cell panel-cell-right">
           <div class="thumb-box">
             <div class="thumb-box-outer">
@@ -145,6 +143,7 @@
         </div>
       </div>
     </div>
+    <script type="module" src="index.js"></script>
   </body>
 </html>
 
