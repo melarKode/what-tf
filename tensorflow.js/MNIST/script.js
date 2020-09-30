@@ -83,6 +83,7 @@ function save(){
     var tensor = resized.expandDims(0);
     var prediction = model.predict(tensor);
     var pIndex = tf.argMax(prediction, 1).dataSync();
+    alert(pIndex);
 }
 
 function init(){
