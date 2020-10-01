@@ -33,6 +33,22 @@ const sketch = function(p){
 
     p.setup = function(){
         const containerSize = document.getElementById('sketch').getBoundingClientRect();
+        const screenWidth = Math.floor(containerSize.width);
+        const screenHeight = Math.floor(containerSize.height);
+        p.createCanvas(screenWidth,screenHeight);
+        p.frameRate(60);
+
+        restart();
+        initModel(22);
+
         
     }
+}
+
+const p5Sketch = new p5(sketch, 'sketch');
+function changeColor(event){
+    const btn = event.target;
+    p5Sketch.updateCurrentColor(btn.dataset.index);
+    document.querySelector('.active').classList.remove('active');
+    btn.classList.add('active');
 }
